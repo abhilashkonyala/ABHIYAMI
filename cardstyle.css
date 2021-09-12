@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+*{
+	font-family: 'Yusei Magic' ,sans-serif;	
+}
+
+
+
+.back{
+	position: relative;
+	display: inline-block;
+	padding: 25px 30px;	
+	margin: 40px 0;
+	color: #DBF9F1;
+	font-size: 36px;
+	text-decoration: none;
+	overflow: hidden;
+	transition: 0.5s;
+	letter-spacing: 4px;
+	-webkit-box-reflect:below 1px linear-gradient(transparent,#0005);
+
+}
+.back:hover{
+	background: #62FBD0;
+	color: black;
+	box-shadow: 0 0 5px #62FBD0,
+				0 0 25px #62FBD0,
+				0 0 50px #62FBD0,
+				0 0 200px #62FBD0;
+}
+
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-image: radial-gradient(circle, #2CF5A3, #4E95E5, #423378);
+	background-attachment: fixed;}
+
+.container{
+	position: relative;
+	width: 1000px;
+	/*	display: flex;*/	
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 20px;
+}
+
+.container .card {
+	position: relative;
+	height:250px;
+	background: white;
+	display: flex;
+	width: 40%;
+	margin: 20px 259px;
+	border-radius: 25px;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
+}
+
+
+.container .card .image
+{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background: rgba(255,255,255,0.1);
+	backdrop-filter:blur(30px);
+	height: calc(100% -20px);
+	width:  calc(100% -20px);
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	border-radius: 24px;
+	box-shadow: 5px 5px 30px rgba(0,0,0,0.1);
+	transition: 0.4s ease-in-out;
+}
+
+img {
+	max-width: 150px;
+	transition: 0.4s ease-in-out;
+
+}
+
+.container .card:hover .image{
+
+	height: 150px;
+	width: 150px;
+	left: 75px;
+	top: calc(55% -	75px);
+}
+
+.container .card .image img{
+	max-width: 150px;
+	transition: 0.4s ease-in-out;
+}
+
+.container .card .content{
+	position: absolute;
+	right: 0;
+	width:  calc(100% -75px);
+	height: 100%;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container .card .content h1{
+	margin-bottom:5px;
+	font-size: 50px;
+}
+a{
+	text-decoration: none;
+	color: black;
+}

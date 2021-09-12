@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>moments</title>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+		* 
+		{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Yusei Magic' ,sans-serif;	
+		}
+		body{
+			background-image: linear-gradient(to left top, #eb4d4d, #ed6445, #ec7941, #e98d40, #e59f45);
+			min-height: 100vh;
+		}
+		.back{
+			position: relative;
+			display: inline-block;
+			padding: 25px 30px; 
+			margin: 40px 0;
+			color: #010322;
+			font-size: 40px;
+			text-decoration: none;
+			overflow: hidden;
+			transition: 0.5s;
+			letter-spacing: 4px;
+			-webkit-box-reflect:below 1.5px linear-gradient(transparent,#0005);
+
+		}
+		.back:hover{
+			background: #D6D7F9;
+			color: black;
+			box-shadow: 0 0 5px #D6D7F9,
+			0 0 25px #D6D7F9,
+			0 0 50px #D6D7F9,
+			0 0 200px #D6D7F9;
+		}
+		.swiper-container {
+			width: 300px;
+			height: 380px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -150px;
+			margin-top: -150px;
+		}
+		.swiper-slide {
+			background-position: center;
+			background-size: cover;
+			background: white;
+		}
+		.swiper-container .swiper-slide .image{
+			position: absolute;
+			width: 300px;
+			height: 300px;
+		}
+		.swiper-container .swiper-slide .image img{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		.swiper-container .swiper-slide .content{
+			position: absolute;
+			bottom: 0;
+			height: 80px;
+			width: 100%;
+			background: #fff;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.swiper-container .swiper-slide .content h2{
+			font-size: 20px;
+			color: #163402;
+		}
+		.swiper-container .swiper-slide .content h2 span{
+			font-size: 16px;
+			color: #3A8708;
+		}
+	</style>
+</head>
+
+<body>
+	<div>
+		<a class="back" href="index.html" >
+			<span></span>
+			<span></span>
+			< </a>
+		</div>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="image">
+						<img src="assets/moment.jpeg">
+					</div>
+					<div class="content">
+						<h2>U are my love,<br><span> my 1 and only thought</span></h2>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="image">
+						<img src="assets/moment2.jpeg">
+					</div>
+					<div class="content">
+						<h2>Love is what makes the<br><span> ride worthwhile</span></h2>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="image">
+						<img src="assets/moment6.png">
+					</div>
+					<div class="content">
+						<h2>Distance is nvr an issue,becoz in the end,<br><span> I knw I have U</span></h2>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="image">
+						<img src="assets/moment3.jpeg">
+					</div>
+					<div class="content">
+						<h2>Gravitation is nt responsible fr people<br><span>falling in love😂😁</span></h2>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="image">
+						<img src="assets/moment4.jpg">
+					</div>
+					<div class="content">
+						<h2>The best thing to hold onto in life <br><span>is each other.</span></h2>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="image">
+						<img src="assets/moment5.jpeg">
+					</div>
+					<div class="content">
+						<h2>I'm happiest when I’m right<br><span>next to U.</span></h2>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="image">
+						<img src="assets/fav.jpeg">
+					</div>
+					<div class="content">
+						<h2>Life is the flower fr which<br><span> love is the honey.</span></h2>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				effect: 'cube',
+				grabCursor: true,
+				cubeEffect: {
+					shadow: true,
+					slideShadows: true,
+					shadowOffset: 20,
+					shadowScale: 0.94,
+				}
+			});
+		</script>
+	</body>
+	</html>

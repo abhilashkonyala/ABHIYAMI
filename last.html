@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2021</title>
+
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+		* 
+		{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Yusei Magic' ,sans-serif;	
+		}
+		body{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height: 100vh;
+			background-image: linear-gradient(to left bottom, #ff9205, #d8bb28, #b3d967, #98efa9, #97ffe4);
+		}
+		.back{
+			position: relative;
+			display: inline-block;
+			top:-25px;
+			right: 260px;
+			padding: 25px 30px; 
+			margin: 40px 0;
+			color: #010322;
+			font-size: 40px;
+			text-decoration: none;
+			overflow: hidden;
+			transition: 0.5s;
+			letter-spacing: 2px;
+		}
+		.back:hover{
+			background:#D6D7F9;
+			color: orange;
+			border-radius: 31%;
+			box-shadow: 0 0 5px #6BE1C3,
+			0 0 25px #6BE1C3,
+			0 0 50px #6BE1C3,
+			0 0 200px #D6D7F9;
+		}
+
+		.container{
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			margin: 40px 0;
+		}
+		.container .card{
+			position: relative;
+			width: 300px;
+			height: 400px;
+			margin: 40px;
+			overflow: hidden;
+			box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+			border-radius: 15px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+		.container .card .content{
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 333px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 10;
+			flex-direction: column;
+			backdrop-filter:blur(15px);
+			box-shadow: 0 -10px 10px rgba(0,0,0,0.1);
+			border:1px solid rgba(255,255,255,0.2);
+			transition:bottom 0.5s; 
+		}
+		.container .card:hover .content{
+			bottom: -300px;
+		}
+		.container .card .content .contentbx h3{
+			color: white;
+			letter-spacing: 2px;
+			font-weight: 555;
+			font-size: 25px;
+			text-align: center;
+			margin: 20px 0 15px;
+			line-height: 1.1em;
+			transition: 0.5s;
+			opacity: 1;
+			transform: translateY(-33px);
+			transition-delay: 0.6s;
+		}
+		.container .card .content .contentbx h3 span{
+			font-size: 12px;
+			font-weight: 300;
+			text-transform: initial;
+		}
+
+	</style>
+</head>
+<body>
+	<section>
+		<div>
+			<a class="back" href="cards.html" >
+				<span></span>
+				<span></span>
+				<<< </a>
+		</div>
+			<div class="container">
+				<div class="card">
+					<div class="image">
+						<img src="assets/jan21.jpeg" >
+					</div>
+					<div class="content">
+						<div class="contentbx">
+							<h3>JAN<br><span>2021</span></h3>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="image">
+						<img src="assets/404.jpg" height="400px" width="300px">
+					</div>
+					<div class="content">
+						<div class="contentbx">
+							<h3>FEB<br><span>2021</span></h3>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="image">
+						<img src="assets/404.jpg" height="400px" width="300px">
+					</div>
+					<div class="content">
+						<div class="contentbx">
+							<h3>MAR<br><span>2021</span></h3>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="image">
+						<img src="assets/apr21.jpg">
+					</div>
+					<div class="content">
+						<div class="contentbx">
+							<h3>APR<br><span>2021</span></h3>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="image">
+						<img src="assets/404.jpg" height="400px" width="300px">
+					</div>
+					<div class="content">
+						<div class="contentbx">
+							<h3>MAY<br><span>2021</span></h3>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="image">
+						<img src="assets/404.jpg" height="400px" width="300px">
+					</div>
+					<div class="content">
+						<div class="contentbx">
+							<h3>JUNE<br><span>2021</span></h3>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="image">
+						<img src="assets/july21.jpeg" height="400px" width="300px">
+					</div>
+					<div class="content">
+						<div class="contentbx">
+							<h3>JULY<br><span>2021</span></h3>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="image">
+						<img src="assets/404.jpg" height="410px" width="300px">
+					</div>
+					<div class="content">
+						<div class="contentbx">
+							<h3>AUGUST<br><span>2021</span></h3>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="image" >
+						<img src="assets/sept2021.jpg" height="395px" width="300px" style="">
+						<!-- <img src="assets/sept2021.jpg" height="455px" width="300px"> -->
+					</div>
+					<div class="content">
+						<div class="contentbx">
+							<h3>SEPTEMBER<br><span>2021</span></h3>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+	</body>
+	</html>
